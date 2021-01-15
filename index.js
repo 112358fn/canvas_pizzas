@@ -47,7 +47,7 @@ async function extractPizzas() {
         return rectContains(circle, idCard);
       })
     pizza.ids = containedIdCards.map((idCard) => {
-      parseInt(idCard.title.replace(/<\/?[^>]+(>|$)/g, ""))
+      return parseInt(idCard.title.replace(/<\/?[^>]+(>|$)/g, ""))
     })
     if (pizza.ids.length > 0) {
       pizzas.push(pizza)
