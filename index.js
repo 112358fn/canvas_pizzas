@@ -10,7 +10,7 @@ miro.onReady(function () {
           if (authorized) {
             console.log("Hello world")
           } else {
-            miro.board.ui.openModal('not-authorized.html').then((res) => {
+            miro.board.ui.openModal('canvas_pizzas/not-authorized.html').then((res) => {
               if (res === 'success') {
                 console.log("Hello world")
               }
